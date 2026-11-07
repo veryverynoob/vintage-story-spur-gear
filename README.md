@@ -1,10 +1,10 @@
 # vintage-story-spur-gear
-mod for vintage story 1.21.x adding spur gears in 3 sizes(36,24,12) all 1x1 block
-wrench can change output side.
+Mod for vintage story 1.21.x adding spur gears in 3 sizes(36,24,12) all 1x1 block.
+Wrench can change side connecting to axle.
 
-tested on 1.21.7
+Tested on 1.21.7
 
-compile with .net 8.0.427
+Compile with .net 8.0.427
     
     $env:VINTAGE_STORY = "PATH_TO_GAME_FOLDER" #"%AppData%\Vintagestory" this is the default
       .\build.ps1
