@@ -1,0 +1,9 @@
+{
+  "type": "code",
+  "modid": "spurgears",
+  "name": "Spur Gears",
+  "authors": ["Johnd"],
+  "description": "1x1 spur gears (12/24/36 teeth) that mesh with adjacent gears and change speed/torque.",
+  "version": "0.1.0",
+  "dependencies": { "game": "1.21.0" }
+}

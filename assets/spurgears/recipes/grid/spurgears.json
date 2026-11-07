@@ -1,0 +1,63 @@
+[
+  {
+    "ingredientPattern": "_P_,PSP,_P_",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:plank-*"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      }
+    },
+    "output": {
+      "type": "block",
+      "code": "spurgears:spurgear-12-ns-both"
+    }
+  },
+  {
+    "ingredientPattern": "PPP,PSP,PPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:plank-*"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      }
+    },
+    "output": {
+      "type": "block",
+      "code": "spurgears:spurgear-24-ns-both"
+    }
+  },
+  {
+    "ingredientPattern": "PPP,RSR,PPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:plank-*"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      },
+      "R": {
+        "type": "item",
+        "code": "game:resin"
+      }
+    },
+    "output": {
+      "type": "block",
+      "code": "spurgears:spurgear-36-ns-both"
+    }
+  }
+]

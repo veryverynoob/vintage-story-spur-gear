@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>spurgears</AssemblyName>
+    <RootNamespace>SpurGears</RootNamespace>
+    <Nullable>disable</Nullable>
+    <VSDir Condition="'$(VINTAGE_STORY)' != ''">$(VINTAGE_STORY)</VSDir>
+    <VSDir Condition="'$(VSDir)' == '' And '$(OS)' == 'Windows_NT'">$(APPDATA)\Vintagestory</VSDir>
+    <VSDir Condition="'$(VSDir)' == ''">$(HOME)/.local/share/vintagestory</VSDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI"><HintPath>$(VSDir)/VintagestoryAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSSurvivalMod"><HintPath>$(VSDir)/Mods/VSSurvivalMod.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSEssentials"><HintPath>$(VSDir)/Mods/VSEssentials.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

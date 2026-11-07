@@ -1,0 +1,164 @@
+{
+  "code": "spurgear",
+  "class": "BlockSpurGear",
+  "entityBehaviors": [
+    {
+      "name": "MPSpurGear"
+    }
+  ],
+  "variantgroups": [
+    {
+      "code": "teeth",
+      "states": [
+        "12",
+        "24",
+        "36"
+      ]
+    },
+    {
+      "code": "rotation",
+      "states": [
+        "ns",
+        "we",
+        "ud"
+      ]
+    },
+    {
+      "code": "ends",
+      "states": [
+        "both",
+        "a",
+        "b"
+      ]
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*-ns-both"
+    ],
+    "mechanics": [
+      "*-ns-both"
+    ]
+  },
+  "drawtype": "JSON",
+  "blockmaterial": "Wood",
+  "resistance": 1.5,
+  "lightAbsorption": 0,
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "shapeByType": {
+    "*-ns-both": {
+      "base": "block/spurgear-{teeth}"
+    },
+    "*-ns-a": {
+      "base": "block/spurgear-{teeth}-a"
+    },
+    "*-ns-b": {
+      "base": "block/spurgear-{teeth}-b"
+    },
+    "*-we-both": {
+      "base": "block/spurgear-{teeth}",
+      "rotateY": 90
+    },
+    "*-we-a": {
+      "base": "block/spurgear-{teeth}-a",
+      "rotateY": 90
+    },
+    "*-we-b": {
+      "base": "block/spurgear-{teeth}-b",
+      "rotateY": 90
+    },
+    "*-ud-both": {
+      "base": "block/spurgear-{teeth}",
+      "rotateX": 90
+    },
+    "*-ud-a": {
+      "base": "block/spurgear-{teeth}-a",
+      "rotateX": 90
+    },
+    "*-ud-b": {
+      "base": "block/spurgear-{teeth}-b",
+      "rotateX": 90
+    }
+  },
+  "textures": {
+    "wood": {
+      "base": "block/gear"
+    }
+  },
+  "selectionboxByType": {
+    "*-ns-*": {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0.375,
+      "x2": 1,
+      "y2": 1,
+      "z2": 0.625
+    },
+    "*-we-*": {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0.375,
+      "x2": 1,
+      "y2": 1,
+      "z2": 0.625,
+      "rotateY": 90
+    },
+    "*-ud-*": {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0.375,
+      "x2": 1,
+      "y2": 1,
+      "z2": 0.625,
+      "rotateX": 90
+    }
+  },
+  "drops": [
+    {
+      "type": "block",
+      "code": "spurgear-{teeth}-ns-both"
+    }
+  ],
+  "attributes": {
+    "mechanicalPower": {
+      "renderer": "generic"
+    }
+  },
+  "sounds": {
+    "place": "game:sounds/block/planks",
+    "walk": "game:sounds/walk/wood"
+  },
+  "collisionboxByType": {
+    "*-ns-*": {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0.375,
+      "x2": 1,
+      "y2": 1,
+      "z2": 0.625
+    },
+    "*-we-*": {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0.375,
+      "x2": 1,
+      "y2": 1,
+      "z2": 0.625,
+      "rotateY": 90
+    },
+    "*-ud-*": {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0.375,
+      "x2": 1,
+      "y2": 1,
+      "z2": 0.625,
+      "rotateX": 90
+    }
+  }
+}
